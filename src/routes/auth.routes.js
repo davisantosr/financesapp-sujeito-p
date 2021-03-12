@@ -7,7 +7,14 @@ import SignIn from '../pages/SignIn';
  const AuthRoutes = () => {
    return (
      <AuthStack.Navigator>
-       <AuthStack.Screen name={'SignIn'} component={SignIn}/>
+       <AuthStack.Screen 
+        options={{
+          headerShown: false
+        }}
+        name={'SignIn'} 
+        component={SignIn}
+        
+        />
      </AuthStack.Navigator>
    )
  }
