@@ -1,10 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
-import firebase from './src/services/firebaseConnection';
+import {NavigationContainer} from '@react-navigation/native';
+import { StatusBar, View } from 'react-native';
+import Routes from './src/routes';
 
 const App = () => {
   return (
-    <View></View>
+      <NavigationContainer>
+        <StatusBar backgroundColor='#131313' barStyle={'light-content'}/>
+        <Routes/>
+      </NavigationContainer>
   )
 }
 
